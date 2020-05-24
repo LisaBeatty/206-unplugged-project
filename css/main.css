@@ -112,7 +112,8 @@ body{
 
 ul,ol {
   list-style-type: none;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 a{
@@ -130,6 +131,7 @@ h2{
   font-size: 1.875em;
   color: #e2e3ed;
   font-weight: 500;
+  margin: 0;
 }
 
 h3, h4 {
@@ -173,11 +175,12 @@ header{
 }
 
 header .content-wrapper {
+  margin: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 header figure {
   width: 60%;
@@ -248,8 +251,9 @@ footer .copyright {
 /***********Mobile Style Homepage****************/
 
 .hero-area{
-  background: url('../img/hero.jpg') center no-repeat #333;
+  background: url('../img/hero.jpg');
   background-size: cover;
+  background-position: center;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -257,7 +261,7 @@ footer .copyright {
 }
 .hero-area h1{
   font-size: 2.25em;
-  font-family:'Poppins', sans-serif;
+  font-family:'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -389,7 +393,7 @@ input[type=button]{
   line-height: 1;
 }
 .faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .faq-content h4 {
   line-height: 1.333;
@@ -516,7 +520,7 @@ input[type=button]{
   }
 
   header .content-wrapper {
-    width: 100%
+    width: 100%;
     justify-content: space-between;
   }
   header figure {
@@ -570,6 +574,10 @@ input[type=button]{
   .features .features-item-description {
     width: 62%;
   }
+
+  .features i {
+    margin-bottom: 30px;
+  }
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -606,6 +614,10 @@ input[type=button]{
   }
   footer p {
     line-height: 1.285;
+  }
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
   footer .copyright {
     width: 100%;
